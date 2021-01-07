@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Acme', sans-serif;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.dice{
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)) , url('./img/lodo-game.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position: relative;
+}
+
+h1{
+    margin: 5px;
+    text-shadow: 5px 3px black;
+    font-size: 6rem;
+    color: #f6b93b;
+}
+
+p{
+    font-size: 2rem;
+    color: whitesmoke;
+    text-shadow: 1px 1px white;
+}
+
+button{
+    padding: 10px;
+    background-color:whitesmoke;
+    color: black;
+    border: none;
+}
+img{
+    width: 100%;
+}
+
+.footer{
+    /* background-color: black; */
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 2px;
+}
+
+.social-media-links i{
+    margin: 5px;
+    padding-right: 20px;
+    transform: scale(0.6);
+    transition: 0.5s;
+}
+
+.social-media-links i:hover{
+    transform: scale(0.6) translateY(-25px);
+}
+
+.footer p{
+    color: #fff;
+}
+
+.navbar{
+    padding: 1rem;
+} 
+
+.navbar .logo{
+    float: left;
+}
+
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+    transition: 0.3s;
+}
+.navbar a:hover{
+    /* border-bottom: 1px solid #fff; */
+    color:#ee4758;
+    letter-spacing: 5px;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+button{
+    background-color: #fff;
+    border-radius: 10em;
+    color: #e63946;
+    transition: 0.5s;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+button:hover{
+    background-color:#ddd;
+    letter-spacing: 10px;
+    color: #263238;
+}
+
+h2{
+    color: white;
+}
+
+.animate__animated.animate__bounce {
+    --animate-duration: 3s;
+  }
+
+.animate__animated.animate__flash {
+    --animate-duration: 1s;
+    --animate-delay: 0.9s;
+  }
+
+.animate__animated.animate__rotateIn {
+    --animate-duration: 2s;
+    --animate-delay: 1s;
+  }

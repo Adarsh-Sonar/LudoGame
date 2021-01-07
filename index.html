@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Ludo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/1c5f3f5acb.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class='navbar bg-dark'>
+        <div class='container'>
+            <h2 class='logo lg-heading text-light'>LG</h2>
+            <ul class='nav-items'>
+                <li class='nav-item' onclick="a()"><a href="https://www.instagram.com/born2shine__/">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class='container'>
+        <h1 class="animate__animated animate__bounce">LUDO GAME</h1>
+
+        <div class='dice animate__animated animate__flash'>
+            <p>PLayer 1</p>
+            <img src="img/dice1.png" id='check1' class='dice animate__animated animate__rotateIn'>
+        </div>
+
+        <div class='dice animate__animated animate__flash'>
+            <p>PLayer 2</p>
+            <img src="img/dice6.png" id='check2' class='dice animate__animated animate__rotateIn'>
+        </div>
+        <div>
+            <button onclick="ludogame()">Click Me</button>
+        </div>
+    </div>
+    <footer class='footer'>
+        <div class='container'>
+            <div class='social-media-links'>
+                <i class="fab fa-instagram fa-3x icon1"></i>
+                <i class="fab fa-facebook fa-3x icon2"></i>
+                <i class="fab fa-twitter fa-3x icon3"></i>
+            </div>
+            <p>LG &copy; 2021, All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+    <script>
+        ludogame = () => {
+            const play1 = Math.floor(Math.random() * 6) + 1;
+            const play1dice = `img/dice${play1}.png`;
+            document.getElementById('check1').setAttribute('src', play1dice);
+
+            const play2 = Math.floor(Math.random() * 6) + 1;
+            const play2dice = `img/dice${play2}.png`;
+            document.getElementById('check2').setAttribute('src', play2dice);
+
+            if (play1 > play2) {
+                document.querySelector('h1').innerHTML = "Player 1 Won";
+            } else if (play1 < play2) {
+                document.querySelector('h1').innerHTML = "Player 2 Won";
+            } else {
+                document.querySelector('h1').innerHTML = "DRAW";
+            }
+        }
+        function a() {
+            alert("You will be redirect to Adarsh's Profile ")
+        }
+    </script>
+</body>
+
+</html>
